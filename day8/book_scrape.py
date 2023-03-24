@@ -3,7 +3,7 @@ file_to_write=open("books_scrape.txt","w", encoding="utf-16")
 import requests
 from bs4 import BeautifulSoup
 
-req=requests.get('https://books.toscrape.com/page-1.html')
+req=requests.get('https://books.toscrape.com/')
 #for loop for going to next pg
 source_code=req.content
 soup= BeautifulSoup(source_code,'lxml') 
